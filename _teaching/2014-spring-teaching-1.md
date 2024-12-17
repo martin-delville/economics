@@ -1,20 +1,22 @@
 ---
-title: "Teaching experience 1"
+title: "Platform Economics"
 collection: teaching
-type: "Undergraduate course"
+type: "Graduate course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "Telecom Paris, MODS"
+date: "2024-01-01"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Please find below the slides used for Platform Economics course
 
-Heading 1
+Network effects
 ======
+[Correction PDF]({{ site.baseurl }}/files/28_02_Platform_econ.pdf)
 
-Heading 2
+Strategies of established platforms
 ======
+[Correction PDF]({{ site.baseurl }}/files/Platform_econ_Tutorial_2_13_03.pdf)
 
-Heading 3
+Platform competition
 ======
+[Correction PDF]({{ site.baseurl }}/files/Platform_econ_tutorial_3_20_03.pdf)

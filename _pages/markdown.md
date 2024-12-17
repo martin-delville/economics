@@ -7,6 +7,11 @@ redirect_from:
   - /markdown.html
 ---
 
+[Download PDF](/files/Platform_econ_Tutorial_2_13_03.pdf)
+[Download PDF](/files/28_02_Platform_econ.pdf)
+[Download PDF](/files/Platform_econ_tutorial_3_20_03.pdf)
+[Download PDF](/files/Academic_CV_2024.pdf)
+
 ## Locations of key files/directories
 
 * Basic config options: _config.yml

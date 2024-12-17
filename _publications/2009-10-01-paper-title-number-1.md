@@ -1,14 +1,20 @@
 ---
-title: "Paper Title Number 1"
+title: "Connecting Votes, Exploring the Impact of Broadband Infrastructure De-
+ployment on Voter Behavior"
 collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+date: 2023-01-01
+paperurl: ''
+citation: 'Working paper, please do not circulate'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+With Marc Bourreau and Lukasz Grzybowski. 
+This paper aims to study the effect of network infrastructure such as broadband internet
+over voters behavior at a local level. Using data on municipal elections between 2008 and
+2020 as well as fiber network deployment data in France, we estimate the probability of an
+incumbent mayor to be reelected or not to be reelected. The outcomes of the Heckman
+models with instrumental variables yield that the effect of fiber deployment is heterogeneous
+among french municipalities, depending on their size, their geographic situation or even
+their political commitment. Overall, it appears that incumbent mayors are punished by
+their electors when fiber is not developed while there is a national plan.
