@@ -9,14 +9,4 @@ date: "2025-01-01"
 
 Please find below the slides used for Platform Economics course
 
-Dif in Dif 
-======
-[Correction PDF]({{ site.baseurl }})
-
-Panel data 
-======
-[Correction PDF]({{ site.baseurl }})
-
-Platform competition
-======
-[Correction PDF]({{ site.baseurl }})
+Diff in Diff, Panel Data, Fixed effects
