@@ -10,7 +10,7 @@ redirect_from:
 
 CV in long version : 
 
-[Download PDF CV]({{ site.baseurl }}/files/Academic_CV_2024.pdf)
+[Download PDF CV]({{ site.baseurl }}/files/CV2025 (2).pdf)
 
 Education
 ======
