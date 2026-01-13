@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 I am a PhD student in Economics, enrolled at CREST (Telecom Paris - Institut polytechnique de Paris). 
-I work primarily on Applied Econometrics, and Empirical Industrial Organization related to digital topics.
+I work primarily on Applied Econometrics, and Industrial Organization related to digital topics.
 
 Contacts
 ======
