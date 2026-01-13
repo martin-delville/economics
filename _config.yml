@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile 2023.png"
+  avatar           : "DSC0256.png"
   name             : ""
   pronouns         : # example: "she/her"  
   bio              : "PhD student in Economics, Telecom Paris/CREST (Institut Polytechnique de Paris)"
