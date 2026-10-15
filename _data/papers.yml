@@ -12,24 +12,15 @@
   presented: CRESSE 2026
   abstract: >-
     Regulation can protect traditional retailers by raising what consumers pay to buy
-    from their competitors. Whether it helps depends on two distinct responses: how many
-    purchases move to the intended beneficiaries, and how much consumers pay on purchases
-    that stay with the regulated sellers. I study France's Darcos law, which imposes a €3
-    minimum delivery charge, retained by the seller, on online orders containing less than
-    €35 of new books, in a market where publishers fix retail prices. Using title-level
-    panels rebuilt from weekly trade archives, I exploit the larger proportional incidence
-    of a fixed fee on cheaper books. In the trade circuit that contains online sellers,
-    relative sales of more exposed titles fall at implementation by more than in the same
-    week of any of the ten preceding years. The size of the sustained response is less
-    certain: against the post-2016 trend it is about 2 percent at the mean list price, but
-    uncertainty about the counterfactual generally prevents rejecting zero. Because the data
-    pool online sellers with small bookstores and do not record orders, I characterize the
-    combinations of recapture by small bookstores and of exempt baskets under which
-    bookstores' gross margin gains match consumers' fee payments. When every cheap book
-    bought online pays the fee, small bookstores would have to recapture three quarters or
-    more of diverted purchases, against a fifth under proportional substitution. Fee
-    payments are transfers to sellers; welfare effects are reported as scenarios that
-    depend on abandoned purchases, fulfillment costs and margins.
+    from their competitors. I study France's Darcos law, which imposes a €3 minimum delivery
+    charge on online orders of less than €35 of new books, in a market where publishers fix
+    retail prices. Using title-level sales data, I exploit the fact that a fixed fee weighs
+    more on cheaper books. In the trade circuit that includes online sellers, sales of more
+    exposed titles fall at implementation by more than in any of the ten preceding years,
+    but the sustained effect is small and imprecisely estimated. If every cheap book bought
+    online pays the fee, bookstores' margin gains match consumers' fee payments only if small
+    bookstores recapture at least three quarters of diverted purchases, far more than
+    proportional substitution implies.
   keywords: Resale price maintenance, delivery fees, platforms, price floors, channel substitution, book market
   jel: L42, L51, L81, D12, Z11
 
