@@ -1,0 +1,32 @@
+---
+layout: default
+title: Teaching
+permalink: /teaching/
+description: Teaching experience and course materials of Martin Delville.
+---
+<header class="page-header">
+  <h1>Teaching</h1>
+  <p class="lede">Tutorials in microeconomics, industrial organization, econometrics and game theory.</p>
+</header>
+
+<section class="section">
+  {%- for c in site.data.teaching %}
+  <article class="course">
+    <div class="course__head">
+      <h2 class="course__title">{{ c.course }}</h2>
+      <p class="course__years">{{ c.years }}</p>
+    </div>
+    {%- assign meta = "" | split: "" | push: c.institution | push: c.level | compact %}
+    {%- if meta.size > 0 %}<p class="course__meta">{{ meta | join: " · " }}</p>{% endif %}
+    {%- if c.role %}<p class="course__role">{{ c.role }}</p>{% endif %}
+    {%- if c.description %}<p class="course__desc">{{ c.description }}</p>{% endif %}
+    {%- if c.materials %}
+    <ul class="materials">
+      {%- for m in c.materials %}
+      <li><a href="{{ m.url | relative_url }}">{% include icon.html name='file' %}{{ m.title }}</a></li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </article>
+  {%- endfor %}
+</section>

@@ -1,0 +1,18 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author.name | jsonify }},
+  "jobTitle": {{ site.author.position | jsonify }},
+  "email": {{ site.author.email | prepend: 'mailto:' | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "image": {{ site.author.photo | absolute_url | jsonify }},
+  "affiliation": [
+    { "@type": "Organization", "name": "Télécom Paris" },
+    { "@type": "Organization", "name": "CREST" },
+    { "@type": "CollegeOrUniversity", "name": {{ site.author.institution | jsonify }} }
+  ],
+  "knowsAbout": {{ site.author.fields | split: ', ' | jsonify }},
+  "sameAs": {{ site.social.links | jsonify }}
+}
+</script>

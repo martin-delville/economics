@@ -1,0 +1,32 @@
+# Teaching, most recent first. Course materials go in /files/teaching/.
+# institution and level are optional.
+
+- course: Microeconomics
+  years: "2026"
+  role: Teaching assistant for Prof. Francis Bloch
+
+- course: Applied Econometrics
+  institution: Télécom Paris
+  level: Graduate
+  years: "2025"
+  role: Teaching assistant for Prof. Patrick Waelbroeck
+  description: Difference-in-differences, panel data, fixed effects.
+
+- course: Game Theory
+  institution: ENSAE Paris
+  level: Graduate
+  years: "2025"
+  role: Teaching assistant for Prof. Philippe Février
+
+- course: Platform Economics
+  institution: Télécom Paris
+  level: Graduate
+  years: "2024, 2025"
+  role: Teaching assistant for Prof. Michelangelo Rossi
+  materials:
+    - title: "Tutorial 1: Network effects (solutions)"
+      url: /files/teaching/platform-economics-tutorial-1-network-effects.pdf
+    - title: "Tutorial 2: Strategies of established platforms (solutions)"
+      url: /files/teaching/platform-economics-tutorial-2-established-platforms.pdf
+    - title: "Tutorial 3: Platform competition (solutions)"
+      url: /files/teaching/platform-economics-tutorial-3-platform-competition.pdf

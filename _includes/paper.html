@@ -1,0 +1,33 @@
+{%- assign p = include.paper -%}
+<article class="paper{% if p.status == 'jmp' %} paper--featured{% endif %}" id="{{ p.id }}">
+  {%- if include.eyebrow %}<p class="eyebrow">{{ include.eyebrow }}</p>{% endif %}
+  <h3 class="paper__title">
+    {%- if p.pdf %}<a href="{{ p.pdf | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif -%}
+  </h3>
+  <p class="paper__meta">
+    {%- if p.coauthors.size > 0 %}with {{ p.coauthors | array_to_sentence_string }}{% else %}Single-authored{% endif -%}
+    {%- if p.presented %}<span class="sep" aria-hidden="true">·</span>Presented at {{ p.presented }}{% endif -%}
+  </p>
+
+  {%- if p.abstract == nil %}
+  {%- elsif include.open %}
+  <div class="paper__abstract">
+    <p>{{ p.abstract }}</p>
+    {%- if p.keywords %}<p class="paper__tags"><span>Keywords</span> {{ p.keywords }}{% if p.jel %}<span class="sep" aria-hidden="true">·</span><span>JEL</span> {{ p.jel }}{% endif %}</p>{% endif %}
+  </div>
+  {%- else %}
+  <details class="paper__abstract">
+    <summary>Abstract</summary>
+    <p>{{ p.abstract }}</p>
+    {%- if p.keywords %}<p class="paper__tags"><span>Keywords</span> {{ p.keywords }}{% if p.jel %}<span class="sep" aria-hidden="true">·</span><span>JEL</span> {{ p.jel }}{% endif %}</p>{% endif %}
+  </details>
+  {%- endif %}
+
+  {%- if p.pdf or p.slides or p.note %}
+  <div class="paper__links">
+    {%- if p.pdf %}<a class="btn btn--primary" href="{{ p.pdf | relative_url }}">{% include icon.html name='file' %}Paper (PDF)</a>{% endif -%}
+    {%- if p.slides %}<a class="btn" href="{{ p.slides | relative_url }}">{% include icon.html name='slides' %}Slides</a>{% endif -%}
+    {%- if p.note and p.pdf == nil %}<span class="paper__note">{{ p.note }}</span>{% endif -%}
+  </div>
+  {%- endif %}
+</article>

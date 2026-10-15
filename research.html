@@ -1,0 +1,49 @@
+---
+layout: default
+title: Research
+permalink: /research/
+description: Job market paper, working papers and presentations of Martin Delville.
+redirect_from:
+  - /publications/
+---
+{%- assign jmp = site.data.papers | where: "status", "jmp" -%}
+{%- assign working = site.data.papers | where: "status", "working" -%}
+{%- assign progress = site.data.papers | where: "status", "progress" -%}
+
+<header class="page-header">
+  <h1>Research</h1>
+  <p class="lede">Empirical industrial organization and digital economics: regulation of online retail, communication networks and their effects on markets and politics.</p>
+</header>
+
+{%- if jmp.size > 0 %}
+<section class="section" aria-labelledby="jmp-heading">
+  <h2 class="section__title" id="jmp-heading">Job Market Paper</h2>
+  {%- for p in jmp %}{% include paper.html paper=p open=true %}{% endfor %}
+</section>
+{%- endif %}
+
+{%- if working.size > 0 %}
+<section class="section" aria-labelledby="wp-heading">
+  <h2 class="section__title" id="wp-heading">Working Papers</h2>
+  {%- for p in working %}{% include paper.html paper=p %}{% endfor %}
+</section>
+{%- endif %}
+
+{%- if progress.size > 0 %}
+<section class="section" aria-labelledby="wip-heading">
+  <h2 class="section__title" id="wip-heading">Work in Progress</h2>
+  {%- for p in progress %}{% include paper.html paper=p %}{% endfor %}
+</section>
+{%- endif %}
+
+<section class="section" aria-labelledby="talks-heading">
+  <h2 class="section__title" id="talks-heading">Presentations</h2>
+  <dl class="timeline">
+    {%- for y in site.data.talks %}
+    <div>
+      <dt>{{ y.year }}</dt>
+      <dd>{{ y.events | join: ", " }}</dd>
+    </div>
+    {%- endfor %}
+  </dl>
+</section>

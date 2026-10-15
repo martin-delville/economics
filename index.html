@@ -1,0 +1,77 @@
+---
+layout: default
+redirect_from:
+  - /about/
+  - /about.html
+---
+{%- assign jmp = site.data.papers | where: "status", "jmp" | first -%}
+{%- assign working = site.data.papers | where: "status", "working" -%}
+
+<section class="hero">
+  <img class="hero__portrait" src="{{ site.author.photo | relative_url }}" alt="Portrait of {{ site.author.name }}" width="640" height="800">
+  <div class="hero__text">
+    {%- if site.job_market %}
+    <p class="badge">On the {{ site.job_market_season }} job market</p>
+    {%- endif %}
+    <h1 class="hero__name">{{ site.author.name }}</h1>
+    <p class="hero__role">{{ site.author.position }}</p>
+    <p class="hero__affil">{{ site.author.affiliation }} · {{ site.author.institution }}</p>
+
+    <p class="hero__bio">
+      I am a PhD candidate in economics at Télécom Paris and CREST, Institut Polytechnique de Paris.
+      My research is in empirical industrial organization and digital economics. I study how
+      regulation and communication networks shape markets and behavior: how a minimum delivery fee
+      on online book sales affects bookstores and consumers, how fiber deployment affects local
+      elections, and how France's first telecommunication network helped integrate its grain
+      markets in the nineteenth century. In 2026, I was a visiting PhD student at Imperial College
+      Business School.
+    </p>
+
+    <dl class="facts">
+      <div><dt>Fields</dt><dd>{{ site.author.fields }}</dd></div>
+      <div><dt>Advisors</dt><dd>{{ site.author.advisors | array_to_sentence_string }}</dd></div>
+    </dl>
+
+    <div class="actions">
+      <a class="btn btn--primary" href="{{ site.author.cv | relative_url }}">{% include icon.html name='download' %}CV (PDF)</a>
+      <a class="btn" href="mailto:{{ site.author.email }}">{% include icon.html name='mail' %}Email</a>
+      {%- if site.author.linkedin %}
+      <a class="btn btn--icon" href="{{ site.author.linkedin }}" aria-label="LinkedIn" title="LinkedIn">{% include icon.html name='linkedin' %}</a>
+      {%- endif %}
+      {%- if site.author.github %}
+      <a class="btn btn--icon" href="{{ site.author.github }}" aria-label="GitHub" title="GitHub">{% include icon.html name='github' %}</a>
+      {%- endif %}
+      {%- if site.author.google_scholar %}
+      <a class="btn btn--icon" href="{{ site.author.google_scholar }}" aria-label="Google Scholar" title="Google Scholar">{% include icon.html name='scholar' %}</a>
+      {%- endif %}
+    </div>
+  </div>
+</section>
+
+{%- if jmp %}
+<section class="section" aria-labelledby="jmp-heading">
+  <h2 class="section__title" id="jmp-heading">Job Market Paper</h2>
+  {% include paper.html paper=jmp open=true %}
+</section>
+{%- endif %}
+
+<section class="section" aria-labelledby="wp-heading">
+  <h2 class="section__title" id="wp-heading">Working Papers</h2>
+  <ul class="paper-list">
+    {%- for p in working %}
+    <li>
+      <a class="paper-list__title" href="{{ '/research/' | relative_url }}#{{ p.id }}">{{ p.title }}</a>
+      <span class="paper-list__meta">with {{ p.coauthors | array_to_sentence_string }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+  <p><a class="more-link" href="{{ '/research/' | relative_url }}">Abstracts and presentations{% include icon.html name='arrow' %}</a></p>
+</section>
+
+<section class="section" aria-labelledby="contact-heading">
+  <h2 class="section__title" id="contact-heading">Contact</h2>
+  <div class="contact">
+    <p>{% include icon.html name='mail' %}<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+    <p>{% include icon.html name='pin' %}<span>{{ site.author.office }}<br>{{ site.author.address }}</span></p>
+  </div>
+</section>

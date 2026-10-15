@@ -1,0 +1,55 @@
+# Content of the /cv/ page (papers, teaching and talks come from their own files).
+
+education:
+  - degree: Ph.D. in Economics
+    school: Télécom Paris & CREST, Institut Polytechnique de Paris
+    years: 2023–2027
+    details:
+      - "Thesis: Essays in Industrial Organization"
+      - "Advisors: Marc Bourreau and Lukasz Grzybowski"
+  - degree: Visiting PhD Student
+    school: Imperial College Business School, London
+    years: Feb.–May 2026
+  - degree: M.Sc. in Digital Economics and Network Industries
+    school: Université Paris-Saclay, Université Paris Dauphine, Télécom Paris & École Polytechnique
+    years: 2022–2023
+    details:
+      - Valedictorian, summa cum laude
+  - degree: M.Sc. in Economics (EOS)
+    school: ENS Paris-Saclay
+    years: 2020–2022
+    details:
+      - Summa cum laude
+
+honors:
+  - title: Selective fourth-year PhD grant
+    org: CREST
+    year: "2026"
+  - title: Valedictorian, M.Sc. Network Industries and Digital Economics
+    org: Université Paris-Saclay
+    year: "2023"
+
+experience:
+  - role: Strategy Intern, uranium oxide market
+    org: Orano
+    place: Châtillon, France
+    years: "2023"
+  - role: Postal Market Intern
+    org: ARCEP, French telecoms and postal regulator
+    place: Paris, France
+    years: "2021"
+
+languages:
+  - name: French
+    level: Native
+  - name: English
+    level: Fluent, C1 Cambridge Advanced
+  - name: Spanish
+    level: Fluent
+  - name: Italian
+    level: Working knowledge
+
+skills: R, Stata, Python, MATLAB, Mathematica, QGIS, LaTeX, Git
+
+other:
+  - "Para-swimming: represents France in international events. French vice-champion, 50 m butterfly; world top 10, 400 m freestyle (S6 class)"

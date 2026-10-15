@@ -1,0 +1,85 @@
+# Research papers, shown on the home page (job market paper) and on /research/.
+# status: jmp | working | progress
+# Links: leave pdf/slides empty to hide the button. Files go in /files/papers/.
+
+- id: darcos
+  status: jmp
+  title: "Minimum Delivery Fees under Resale Price Maintenance: Evidence from the French Book Market"
+  coauthors: []
+  pdf:            # e.g. /files/papers/Delville_JMP.pdf
+  slides:
+  note: Draft available upon request.
+  presented: CRESSE 2026
+  abstract: >-
+    Regulation can protect traditional retailers by raising what consumers pay to buy
+    from their competitors. Whether it helps depends on two distinct responses: how many
+    purchases move to the intended beneficiaries, and how much consumers pay on purchases
+    that stay with the regulated sellers. I study France's Darcos law, which imposes a €3
+    minimum delivery charge, retained by the seller, on online orders containing less than
+    €35 of new books, in a market where publishers fix retail prices. Using title-level
+    panels rebuilt from weekly trade archives, I exploit the larger proportional incidence
+    of a fixed fee on cheaper books. In the trade circuit that contains online sellers,
+    relative sales of more exposed titles fall at implementation by more than in the same
+    week of any of the ten preceding years. The size of the sustained response is less
+    certain: against the post-2016 trend it is about 2 percent at the mean list price, but
+    uncertainty about the counterfactual generally prevents rejecting zero. Because the data
+    pool online sellers with small bookstores and do not record orders, I characterize the
+    combinations of recapture by small bookstores and of exempt baskets under which
+    bookstores' gross margin gains match consumers' fee payments. When every cheap book
+    bought online pays the fee, small bookstores would have to recapture three quarters or
+    more of diverted purchases, against a fifth under proportional substitution. Fee
+    payments are transfers to sellers; welfare effects are reported as scenarios that
+    depend on abandoned purchases, fulfillment costs and margins.
+  keywords: Resale price maintenance, delivery fees, platforms, price floors, channel substitution, book market
+  jel: L42, L51, L81, D12, Z11
+
+- id: chappe
+  status: working
+  title: "Information Networks and Market Integration: Evidence from the Napoleonic Telegraph and Wheat Markets in Nineteenth-Century France"
+  coauthors: [Marc Bourreau, Lukasz Grzybowski]
+  pdf:
+  slides:
+  abstract: >-
+    The Chappe optical telegraph was the world's first large-scale communication network,
+    operating in France from the 1790s until the mid-nineteenth century. Designed for
+    administrative and military use, the system enabled rapid transmission of information
+    across long distances decades before the advent of railways or electric telegraphy.
+    This paper studies whether the staggered expansion of the Chappe network improved market
+    integration in nineteenth-century France. Using monthly wheat price data for 87
+    departments from 1807 to 1851, we exploit variation in the timing and geographic reach
+    of the network to identify its effects on market outcomes. We find that departments
+    connected to the telegraph experienced lower average wheat prices, reduced spatial price
+    dispersion, faster price convergence, and fewer violations of the Law of One Price after
+    accounting for transportation costs. These effects are strongest in departments connected
+    early in the network's expansion and persist over time. Because private traders did not
+    have direct access to the telegraph, the results point to improved administrative
+    coordination, rather than direct dissemination of price information, as a key mechanism.
+    Overall, the findings show that advances in communication technology can substantially
+    enhance market integration even when information flows operate primarily through the
+    state.
+  keywords: Chappe telegraph, market efficiency, price dispersion, market integration, information economics
+  jel: N73, L96, Q11, N13
+
+- id: fiber-voting
+  status: working
+  title: "Is Fiber Pulling the Strings in Voter Behavior? The Effect of Fiber Network Deployment on Municipal Election Outcomes"
+  coauthors: [Marc Bourreau, Lukasz Grzybowski]
+  pdf:
+  slides:
+  abstract: >-
+    This paper studies the effect of broadband infrastructure on voter behavior at the local
+    level. Using data on French municipal elections between 2008 and 2020 together with fiber
+    network deployment data, we estimate the probability that an incumbent mayor is
+    re-elected. Heckman selection models with instrumental variables show that the effect of
+    fiber deployment is heterogeneous across French municipalities, depending on their size,
+    their geographic situation and their political orientation. Overall, incumbent mayors
+    appear to be punished by voters when fiber is not deployed in their municipality while a
+    national deployment plan is under way.
+
+- id: grey-markets
+  status: working
+  title: "Second-Degree Price Discrimination in Digital Goods: Grey Markets and Conflict"
+  coauthors: [Si Hao Li]
+  pdf:
+  slides:
+  abstract:       # add the abstract here when available

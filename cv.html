@@ -1,0 +1,116 @@
+---
+layout: default
+title: CV
+permalink: /cv/
+description: Curriculum vitae of Martin Delville, PhD candidate in economics.
+redirect_from:
+  - /resume/
+---
+{%- assign cv = site.data.cv -%}
+
+<header class="page-header page-header--split">
+  <div>
+    <h1>Curriculum Vitae</h1>
+    <p class="lede">{{ site.author.position }}, {{ site.author.affiliation }}, {{ site.author.institution }}</p>
+  </div>
+  <a class="btn btn--primary" href="{{ site.author.cv | relative_url }}">{% include icon.html name='download' %}Download PDF</a>
+</header>
+
+<div class="cv">
+  <section class="cv__section">
+    <h2 class="cv__label">Education</h2>
+    <div class="cv__body">
+      {%- for e in cv.education %}
+      <div class="cv__item">
+        <div class="cv__row"><strong>{{ e.degree }}</strong><span class="cv__date">{{ e.years }}</span></div>
+        <p class="cv__sub">{{ e.school }}</p>
+        {%- for d in e.details %}<p class="cv__detail">{{ d }}</p>{% endfor %}
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section class="cv__section">
+    <h2 class="cv__label">Fields</h2>
+    <div class="cv__body"><p>{{ site.author.fields }}</p></div>
+  </section>
+
+  <section class="cv__section">
+    <h2 class="cv__label">Research</h2>
+    <div class="cv__body">
+      {%- for p in site.data.papers %}
+      <div class="cv__item">
+        <p><a href="{{ '/research/' | relative_url }}#{{ p.id }}">{{ p.title }}</a></p>
+        <p class="cv__sub">{% if p.status == 'jmp' %}Job market paper{% elsif p.status == 'working' %}Working paper{% else %}Work in progress{% endif %}{% if p.coauthors.size > 0 %}, with {{ p.coauthors | array_to_sentence_string }}{% endif %}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section class="cv__section">
+    <h2 class="cv__label">Presentations</h2>
+    <div class="cv__body">
+      {%- for y in site.data.talks %}
+      <div class="cv__item cv__item--inline"><span class="cv__date">{{ y.year }}</span><p>{{ y.events | join: ", " }}</p></div>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section class="cv__section">
+    <h2 class="cv__label">Teaching</h2>
+    <div class="cv__body">
+      {%- for c in site.data.teaching %}
+      <div class="cv__item">
+        <div class="cv__row"><strong>{{ c.course }}</strong><span class="cv__date">{{ c.years }}</span></div>
+        {%- assign meta = "" | split: "" | push: c.institution | push: c.role | compact %}
+        <p class="cv__sub">{{ meta | join: " · " }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+
+  {%- if cv.honors %}
+  <section class="cv__section">
+    <h2 class="cv__label">Honors</h2>
+    <div class="cv__body">
+      {%- for h in cv.honors %}
+      <div class="cv__item">
+        <div class="cv__row"><strong>{{ h.title }}</strong><span class="cv__date">{{ h.year }}</span></div>
+        <p class="cv__sub">{{ h.org }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  <section class="cv__section">
+    <h2 class="cv__label">Experience</h2>
+    <div class="cv__body">
+      {%- for x in cv.experience %}
+      <div class="cv__item">
+        <div class="cv__row"><strong>{{ x.org }}</strong><span class="cv__date">{{ x.years }}</span></div>
+        <p class="cv__sub">{{ x.role }} · {{ x.place }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section class="cv__section">
+    <h2 class="cv__label">Languages</h2>
+    <div class="cv__body">
+      <p>{% for l in cv.languages %}{{ l.name }} <span class="muted">({{ l.level }})</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+    </div>
+  </section>
+
+  <section class="cv__section">
+    <h2 class="cv__label">Software</h2>
+    <div class="cv__body"><p>{{ cv.skills }}</p></div>
+  </section>
+
+  {%- if cv.other %}
+  <section class="cv__section">
+    <h2 class="cv__label">Other</h2>
+    <div class="cv__body">{% for o in cv.other %}<p>{{ o }}</p>{% endfor %}</div>
+  </section>
+  {%- endif %}
+</div>
