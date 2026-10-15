@@ -14,13 +14,14 @@
     Regulation can protect traditional retailers by raising what consumers pay to buy
     from their competitors. I study France's Darcos law, which imposes a €3 minimum delivery
     charge on online orders of less than €35 of new books, in a market where publishers fix
-    retail prices. Using title-level sales data, I exploit the fact that a fixed fee weighs
-    more on cheaper books. In the trade circuit that includes online sellers, sales of more
-    exposed titles fall at implementation by more than in any of the ten preceding years,
-    but the sustained effect is small and imprecisely estimated. If every cheap book bought
-    online pays the fee, bookstores' margin gains match consumers' fee payments only if small
-    bookstores recapture at least three quarters of diverted purchases, far more than
-    proportional substitution implies.
+    retail prices. Using title-level panels built from weekly trade archives, I exploit the
+    larger proportional incidence of a fixed fee on cheaper books, comparing more and less
+    exposed titles across trade circuits. In the circuit that includes online sellers, sales
+    of more exposed titles fall at implementation by more than in any of the ten preceding
+    years. I then characterize the conditions under which bookstores' margin gains match
+    consumers' fee payments: if every cheap book bought online pays the fee, small bookstores
+    must recapture at least three quarters of diverted purchases, against one fifth under
+    proportional substitution.
   keywords: Resale price maintenance, delivery fees, platforms, price floors, channel substitution, book market
   jel: L42, L51, L81, D12, Z11
 
